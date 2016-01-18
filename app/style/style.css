@@ -12,8 +12,8 @@ body,
 body {
     margin: 0;
     padding: 0;
-    background: #b3edb0 url("../img/background.jpg") no-repeat;
-    background-size: cover;
+    background: #b3edb0 url("../img/background.jpg") no-repeat center center / cover fixed;
+
 }
 
 body > .wrap {
@@ -141,7 +141,8 @@ body > .wrap {
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
     padding: 15px 0 0 25px;
 }
-.click{
+
+.click {
     color: rgb(30, 116, 101);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
     font-size: 20px;
@@ -163,9 +164,6 @@ body > .wrap {
 .men_p:last-child {
     border-radius: 0 0 4px 4px;
 }
-
-
-
 /*Contacts*/
 
 .contacts {
@@ -173,29 +171,26 @@ body > .wrap {
     min-height: 43px;
     margin: 34px 0 35px 0;
 }
-.right-content {
-    width: 651px;
-    margin-left: 59px;
-    float: left;
-}
-.cont_h{
+.cont_h {
     width: 100%;
     height: 43px;
     background: linear-gradient(to bottom, #f4ce82, #dfb866);
-    box-shadow: 0 0 0 1px rgba(202, 161, 81, 0.5) inset, 0 6px 0 -4px #f8dda7 inset,  0 1px 0 0 rgba(188,187,186,0.5);
-    border-bottom: 1px solid  rgba(188, 187, 186, 0.9);
+    box-shadow: 0 0 0 1px rgba(202, 161, 81, 0.5) inset, 0 6px 0 -4px #f8dda7 inset, 0 1px 0 0 rgba(188, 187, 186, 0.5);
+    border-bottom: 1px solid rgba(188, 187, 186, 0.9);
     border-radius: 5px 5px 0 0;
     font-size: 20px;
     font-family: OpenSans-Semibold;
     color: rgb(208, 152, 44);
     line-height: 1.1;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4); 
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
 }
-.cont_h > span{
+
+.cont_h > span {
     margin: 13px 0 0 27px;
     position: absolute;
 }
-.cont{
+
+.cont {
     box-sizing: border-box;
     width: 100%;
     height: 37px;
@@ -206,42 +201,106 @@ body > .wrap {
     font-family: OpenSans;
     font-size: 14px;
     color: #727070;
-    border-top: 1px solid  rgba(214, 213, 211, 0.8);
-    border-right: 1px solid  rgba(214, 213, 211, 0.8);
-    border-left: 1px solid  rgba(214, 213, 211, 0.8);
+    border-top: 1px solid rgba(214, 213, 211, 0.8);
+    border-right: 1px solid rgba(214, 213, 211, 0.8);
+    border-left: 1px solid rgba(214, 213, 211, 0.8);
 }
-.cont:hover{
+
+.cont:hover {
     background: linear-gradient(to bottom, #ffffff, #f2e7d0);
 }
-.cont:hover span{
+
+.cont:hover span {
     text-decoration: underline;
 }
-.cont:last-child{
+
+.cont:last-child {
     border-radius: 0 0 5px 5px;
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid  rgba(214, 213, 211, 0.8);
+    border-bottom: 1px solid rgba(214, 213, 211, 0.8);
 }
-.contactArrow{
+
+.contactArrow {
     margin-top: -1px;
 }
-.email{
+
+.email {
     margin: 0 12px 13px 19px;
 }
-.phone{
+
+.phone {
     margin: 0 12px 6px 19px;
 }
-.skype{
+
+.skype {
     margin: 0 9px 7px 19px;
 }
-.contacts > a > span{
+
+.contacts > a > span {
     margin: 10px 0 0 30px;
     position: absolute;
 }
 
 /*Contacts End*/
-
-
 /*Navigation End*/
+
+
+/*Information*/
+.right-content {
+    width: 651px;
+    min-height: 600px;
+    margin: 0 0 0 59px;
+    float: left;
+    padding: 0;
+}
+
+.block_style_header{
+    width: 100%;
+    min-height: 55px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #a9a7a7, #7c7979);
+    box-shadow: 0 0 0 1px rgba(156, 156, 156, 0.8) inset, 0 6px 0 -4px #c3c2c2 inset;
+    border-radius: 5px 5px 0 0;
+    
+}
+.block_style_header > span {
+
+  font-size: 24px;
+  font-family: OpenSans-Semibold;
+  color: rgb(238, 237, 236);
+  line-height: 0.917;
+  text-align: left;
+  text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.5);
+    position: absolute;
+    margin: 15px 0 0 40px;
+    
+}
+.block_style_content{
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #f7f6f5, #f0eeed);
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid rgba(105,105,105,0.35);
+    border-left: 1px solid rgba(105,105,105,0.35);
+    border-bottom: 1px solid rgba(105,105,105,0.35);
+}
+
+.info_work_edu{
+    margin: 36px 0;
+}
+
+.info_content{
+    min-height: 228px;
+}
+.work_content{
+    min-height: 111px;
+}
+.edu_content{
+    height: 111px;
+}
+
+
+/*Information End*/
 
 
 
@@ -258,7 +317,8 @@ body > .wrap {
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    margin-top: -61px; /* negative value of footer height */
+    margin-top: -61px;
+    /* negative value of footer height */
     clear: both;
     border-top: 1px solid rgba(113, 111, 111, 0.2);
     font-family: OpenSans-Light;
