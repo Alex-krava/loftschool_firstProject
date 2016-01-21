@@ -293,7 +293,7 @@ body {
     border-radius: 0 0 5px 5px;
     border-right: 1px solid rgba(105, 105, 105, 0.35);
     border-left: 1px solid rgba(105, 105, 105, 0.35);
-    border-bottom: 1px solid rgba(105, 105, 105, 0.35);
+    box-shadow: 0 1px 0 0 rgba(105, 105, 105, 0.35);
 }
 
 .info_work_edu {
@@ -414,11 +414,11 @@ body {
     min-height: 90px;
     border-bottom: 1px solid #dbdbda;
     box-shadow: 0 6px 0 -5px #edeceb;
-    padding-bottom: 17.5px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #727070;
+    display: table;
 }
 
     .list_information_block:last-child {
@@ -426,23 +426,46 @@ body {
         box-shadow: none;
     }
 
-    .list_information_block > img {
+    .list_information_block > .icon_info_container {
         margin: 17.5px 35px 0 0;
+        width: 54px;
+         display: table-cell;
+    text-align: center;
+    vertical-align: middle;
     }
 
+.icon_container{
+    display: block;   
+  border-radius: 50%;
+    background: #f7f7f7;
+  box-shadow: 1px 1px 0px 0px #ffffff,inset 1px 1px 0px 0px #d0d0d0;
+  width: 53px;
+  height: 54px; 
+}
     .list_information_block > span {
         display: block;
         font-size: 14px;
+        
     }
+.work{
+    background: url(../img/workIcon.png) center center no-repeat;
+}
+.study{
+background: url(../img/studyIcon.png) center center no-repeat;
+}
+.diplom{
+   background: url(../img/diplomaIcon.png) center center no-repeat; 
+}
 
 .info_location {
-    margin: -52px 0 0 89px;
+    margin-left: 41px;
+    margin-top: 23px;
     font-family: 'OpenSans-Semibold';
 }
 
 .info_date {
     font-family: 'OpenSans';
-    margin-left: 89px;
+    margin-left: 41px;
 }
 
 
