@@ -355,9 +355,40 @@ body {
     margin: -20px 0 0 141px;
 }
 
-    .skils > img {
+.skils_text {
+        display: block;
         float: left;
+        height: 25px;
+        background: url(../img/techolBackCenter.png) repeat-x;
+        margin: 0 14px 0 11px; 
     }
+.skils_text > span{
+    display: block;
+    float: left;
+    padding: 6px 3px 0 3px;
+    font-family: 'OpenSans-Semibold';
+    font-size: 9px;
+    color: #1e7465;
+  text-shadow: 0px 0px 0px #1e7465;
+}
+.skils_text:before{
+    content: "";
+    background: url(../img/techolBackLeft.png) no-repeat;
+    width: 11px;
+    height: 25px;
+    margin-left: -11px;
+    display: block;
+    float: left;
+}
+.skils_text:after{
+    content: "";
+    background: url(../img/techolBackRight.png) no-repeat;
+    width: 8px;
+    height: 25px;
+    margin-right: -11px;
+    display: block;
+    float: left;
+}
 
 .work_content {
     min-height: 111px;
