@@ -104,8 +104,8 @@ body {
 
 .content {
     width: 960px;
-    margin: 35px auto;
-    padding: 0;
+    margin: 0 auto;
+    padding-top: 35px;
 }
 
 
@@ -153,6 +153,21 @@ body {
 
 .men_p:not(.click):hover {
     background: linear-gradient(to bottom, #e4e3e3, #bfbcbc);
+}
+.men_p:not(.click):active{
+    background: linear-gradient(to bottom, #a8a6a7, #7d797a);
+    box-shadow: 0 0 0 1px #9c9c9c inset, 0 6px 0 -4px #c3c3c3 inset;
+    color: #d8d8d8;
+    text-shadow: 0 1px 0 #666465;
+}
+.click:hover{
+    background: linear-gradient(to bottom, #90d9bb, #679f86);
+}
+.click:active{
+    background: linear-gradient(to bottom, #78b89e, #4b7663);
+    box-shadow: 0 0 0 1px #88d1b3 inset, 0 6px 0 -4px #a1d0bc inset;
+    color: #d1d0ce;
+    text-shadow: 0 1px 0 #666465;
 }
 
 .men_p:first-child {

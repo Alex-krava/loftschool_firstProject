@@ -31,8 +31,7 @@ gulp.task('server', function () {
 gulp.task('watch', function(){
     gulp.watch('app/style/*.css', ['css']);
     gulp.watch([
-    'app/*.php',
-    'app/include/*.html',
+    'app/*.html',
     'app/js/*.js',
     'app/style/*.css'
   ]).on('change', browserSync.reload);
