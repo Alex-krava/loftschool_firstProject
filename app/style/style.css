@@ -539,3 +539,6 @@ background: url(../img/studyIcon.png) center center no-repeat;
 
 
 /*Footer End*/
+.displayNone{
+    display: none;
+}
