@@ -5,7 +5,8 @@ body,
 }
 
 body {
-    background: #b3edb0 url("../img/background.jpg") no-repeat center center / cover fixed;
+    background: #b3edb0 url("../img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
     body > .wrap {
@@ -24,15 +25,18 @@ body {
     width: 100%;
     min-width: 460px;
     height: 90px;
-    background: #6f6d6d url("../img/bgHead.png") repead-x;
+    background: url("../img/bgHead.png") repeat-x;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 0 0 0 7px #fff, 0 0 0 8px rgba(113, 111, 111, 0.15);
+    background-color: #706e6e;
 }
+
 
 .containerHead {
     height: 100%;
+    max-width: 1184px;
     margin: 0 auto;
     padding: 0 7%;
 }
@@ -138,6 +142,7 @@ body {
     text-align: left;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
     padding: 15px 0 0 25px;
+   background-color: #f2efef;
 }
 
 .click {
@@ -149,21 +154,25 @@ body {
     padding: 15px 0 0 25px;
     background: linear-gradient(to bottom, #7de8cd, #3fb79a);
     box-shadow: 0 0 0 1px rgba(113, 111, 111, 0.15) inset, 0 6px 0 -4px #a5efdd inset;
+    background-color: #53c7aa;
 }
 
 .men_p:not(.click):hover {
     background: linear-gradient(to bottom, #e4e3e3, #bfbcbc);
 }
-.men_p:not(.click):active{
+
+.men_p:not(.click):active {
     background: linear-gradient(to bottom, #a8a6a7, #7d797a);
     box-shadow: 0 0 0 1px #9c9c9c inset, 0 6px 0 -4px #c3c3c3 inset;
     color: #d8d8d8;
     text-shadow: 0 1px 0 #666465;
 }
-.click:hover{
+
+.click:hover {
     background: linear-gradient(to bottom, #90d9bb, #679f86);
 }
-.click:active{
+
+.click:active {
     background: linear-gradient(to bottom, #78b89e, #4b7663);
     box-shadow: 0 0 0 1px #88d1b3 inset, 0 6px 0 -4px #a1d0bc inset;
     color: #d1d0ce;
@@ -197,6 +206,7 @@ body {
     color: rgb(208, 152, 44);
     line-height: 1.1;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    background-color: #f1c97b;
 }
 
     .cont_h > span {
@@ -218,6 +228,7 @@ body {
     border-top: 1px solid rgba(214, 213, 211, 0.8);
     border-right: 1px solid rgba(214, 213, 211, 0.8);
     border-left: 1px solid rgba(214, 213, 211, 0.8);
+    background-color: #fcfbfb;
 }
 
     .cont:hover span {
@@ -258,6 +269,7 @@ body {
     margin: 10px 0 0 90px;
     max-width: 150px;
     display: block;
+    -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
 
@@ -284,6 +296,7 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: linear-gradient(to bottom, #a9a7a7, #7c7979);
+    background-color: #827f7f;
     box-shadow: 0 0 0 1px rgba(156, 156, 156, 0.8) inset, 0 6px 0 -4px #c3c2c2 inset;
     border-radius: 5px 5px 0 0;
 }
@@ -294,7 +307,7 @@ body {
         color: rgb(238, 237, 236);
         line-height: 0.917;
         text-align: left;
-        text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.5);
+        text-shadow: 0 1px 0 rgba(102, 101, 101, 0.5);
         position: absolute;
         margin: 15px 0 0 40px;
     }
@@ -305,6 +318,7 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background: linear-gradient(to bottom, #f7f6f5, #f0eeed);
+    background-color: #f3f1f0;
     border-radius: 0 0 5px 5px;
     border-right: 1px solid rgba(105, 105, 105, 0.35);
     border-left: 1px solid rgba(105, 105, 105, 0.35);
@@ -350,10 +364,13 @@ body {
 .name_profile {
     width: 100%;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-family: 'OpenSans-Semibold';
     font-size: 14px;
     color: #727070;
+}
+.name_profile:last-child{
+    margin-top: 13px;
 }
 
 .name_profile_value {
@@ -371,39 +388,42 @@ body {
 }
 
 .skils_text {
+    display: block;
+    float: left;
+    height: 25px;
+    background: url(../img/techolBackCenter.png) repeat-x;
+    margin: 0 14px 0 11px;
+}
+
+    .skils_text > span {
         display: block;
         float: left;
-        height: 25px;
-        background: url(../img/techolBackCenter.png) repeat-x;
-        margin: 0 14px 0 11px; 
+        padding: 6px 3px 0 3px;
+        font-family: 'OpenSans-Semibold';
+        font-size: 9px;
+        color: #1e7465;
+        text-shadow: 0px 0px 0px #1e7465;
     }
-.skils_text > span{
-    display: block;
-    float: left;
-    padding: 6px 3px 0 3px;
-    font-family: 'OpenSans-Semibold';
-    font-size: 9px;
-    color: #1e7465;
-  text-shadow: 0px 0px 0px #1e7465;
-}
-.skils_text:before{
-    content: "";
-    background: url(../img/techolBackLeft.png) no-repeat;
-    width: 11px;
-    height: 25px;
-    margin-left: -11px;
-    display: block;
-    float: left;
-}
-.skils_text:after{
-    content: "";
-    background: url(../img/techolBackRight.png) no-repeat;
-    width: 8px;
-    height: 25px;
-    margin-right: -11px;
-    display: block;
-    float: left;
-}
+
+    .skils_text:before {
+        content: "";
+        background: url(../img/techolBackLeft.png) no-repeat;
+        width: 11px;
+        height: 25px;
+        margin-left: -11px;
+        display: block;
+        float: left;
+    }
+
+    .skils_text:after {
+        content: "";
+        background: url(../img/techolBackRight.png) no-repeat;
+        width: 8px;
+        height: 25px;
+        margin-right: -11px;
+        display: block;
+        float: left;
+    }
 
 .work_content {
     min-height: 111px;
@@ -444,32 +464,35 @@ body {
     .list_information_block > .icon_info_container {
         margin: 17.5px 35px 0 0;
         width: 54px;
-         display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
     }
 
-.icon_container{
-    display: block;   
-  border-radius: 50%;
+.icon_container {
+    display: block;
+    border-radius: 50%;
     background: #f7f7f7;
-  box-shadow: 1px 1px 0px 0px #ffffff,inset 1px 1px 0px 0px #d0d0d0;
-  width: 53px;
-  height: 54px; 
+    box-shadow: 1px 1px 0px 0px #ffffff,inset 1px 1px 0px 0px #d0d0d0;
+    width: 53px;
+    height: 54px;
 }
-    .list_information_block > span {
-        display: block;
-        font-size: 14px;
-        
-    }
-.work{
+
+.list_information_block > span {
+    display: block;
+    font-size: 14px;
+}
+
+.work {
     background: url(../img/workIcon.png) center center no-repeat;
 }
-.study{
-background: url(../img/studyIcon.png) center center no-repeat;
+
+.study {
+    background: url(../img/studyIcon.png) center center no-repeat;
 }
-.diplom{
-   background: url(../img/diplomaIcon.png) center center no-repeat; 
+
+.diplom {
+    background: url(../img/diplomaIcon.png) center center no-repeat;
 }
 
 .info_location {
@@ -502,6 +525,7 @@ background: url(../img/studyIcon.png) center center no-repeat;
     text-align: center;
     position: relative;
     margin-top: -61px;
+    background-color: #f8f8f8;
     /* negative value of footer height */
     clear: both;
     border-top: 1px solid rgba(113, 111, 111, 0.2);
@@ -536,7 +560,7 @@ background: url(../img/studyIcon.png) center center no-repeat;
 
 /*clearfix*/
 
-.clearfix:after {
+.clearfix::after {
     content: ".";
     display: block;
     height: 0;
@@ -546,14 +570,14 @@ background: url(../img/studyIcon.png) center center no-repeat;
 
 .clearfix {
     display: inline-block;
-    display: block;
 }
-
-
 /*clearfix end*/
-
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
 
 /*Footer End*/
-.displayNone{
+.displayNone {
     display: none;
 }
