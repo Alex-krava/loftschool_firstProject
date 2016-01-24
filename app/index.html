@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <meta name="author" content="Alexandr Kravchenko and EULA" />
-    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="img/favicon.png" />
     <title>Кравченко Александр персональный сайт - портфолио web front-end developer</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="bower/normalize-css/normalize.css">
@@ -21,10 +21,10 @@
     <div class="wrap">
         <div class="main clearfix">
             <!--HEADER-->
-            <header class="header">
+            <header class="header clearfix">
                 <div class="containerHead">
-                    <a href="#" class="logo"><img src="img/logo.png" alt="Kravchenko"></a>
-                    <ul class="soc">
+                    <a href="index.html" class="logo"><img src="img/logo1.png" alt="Kravchenko"></a>
+                    <ul class="soc clearfix">
                         <li class="socIcon">
                             <a href="#" class="socIcon fac"></a>
                         </li>
@@ -37,7 +37,36 @@
                         <li class="socIcon">
                             <a href="#" class="socIcon git"></a>
                         </li>
+                        
+                        <li class="socIcon mobile_menu_li">
+                            <ul class="mobile_menu">
+                       
+                                <li class="icon_mobile_menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </li>
+<!--MOBILE MENU DISPLAY NONE!!!-->
+                                <li class="items_mobile_menu displayNone">
+                                   <ul class="items_mobile_menu_ul">
+                                    <a class='men_p click' href="index.html">
+                                        <li>Обо мне</li>
+                        </a>
+                                    <a class='men_p' href="pages/works.html">
+                                        <li>Мои Работы</li>
+                        </a>
+                                    <a class='men_p' href="pages/contacts.html">
+                                        <li>Обратная связь</li>
+                        </a>
+                                    </ul>
+                                </li>
+                        
+                            </ul>
+                        </li>
                     </ul>
+                    
+                    
+                    
                 </div>
                 </header>
             <!--HEADER END-->
@@ -48,26 +77,7 @@
         <!--CONTENT-->
         <section class="content clearfix">
             <!--Navigation-->
-            <div class="left-navigation ">
-                <div class="menu">
-                    <a class='men_p click' href="index.html">Обо мне</a>
-                    <a class='men_p' href="pages/works.html">Мои Работы</a>
-                    <a class='men_p' href="pages/contacts.html">Обратная связь</a>
-
-                </div>
-                <div class="contacts">
-                    <div class="cont_h "><span>Контакты</span></div>
-                    <a href="mailto:alex.krava@live.com" class="cont email">
-                        <span>alex.krava@live.com</span>
-                    </a>
-                    <a href="tel:+380634695049" class="cont phone">
-                        <span>+380634695049</span>
-                    </a>
-                    <a href="skype:a.kravchenko_1989" class="cont skype">
-                        <span>a.kravchenko_1989</span>
-                    </a>
-                </div>
-            </div>
+            
             <!--Navigation End-->
 
             <!--Content-->
@@ -155,12 +165,35 @@
                                
                             <li class="list_information_block">
                                <span class="icon_info_container"><span class="icon_container diplom"></span> </span>
-                               <span class="info_location">Курсы  Loftschool</span><span class="info_date">Январь 2016 - по настоящее время</span></li>
+                               <span class="info_location">Курсы  Loftschool </span><span class="info_date">Январь 2016 - по настоящее время</span></li>
                         </ul>
                     </div>
                 </div>
                 <!--Education End-->
             </div>
+            
+            <!--Navigation-->
+            <div class="left-navigation">
+                <div class="menu">
+                    <a class='men_p click' href="index.html">Обо мне</a>
+                    <a class='men_p' href="pages/works.html">Мои Работы</a>
+                    <a class='men_p' href="pages/contacts.html">Обратная связь</a>
+
+                </div>
+                <div class="contacts">
+                    <div class="cont_h "><span>Контакты</span></div>
+                    <a href="mailto:alex.krava@live.com" class="cont email">
+                        <span>alex.krava@live.com</span>
+                    </a>
+                    <a href="tel:+380634695049" class="cont phone">
+                        <span>+380634695049</span>
+                    </a>
+                    <a href="skype:a.kravchenko_1989" class="cont skype">
+                        <span>a.kravchenko_1989</span>
+                    </a>
+                </div>
+            </div>
+            <!--Navigation End-->
             <!--Content End-->
         </section>
         <!--CONTENT END-->
