@@ -1094,3 +1094,33 @@ html .clearfix {
   background: -webkit-linear-gradient(top,#e8e7e7,#bfbdbd);
   background: linear-gradient(to bottom,#e8e7e7,#bfbdbd);
 }
+
+@media screen and (max-width:999px) {
+  .my_works_container {
+    width: 465px;
+    margin: 0 auto;
+    padding: 38px 0 15px;
+    overflow: hidden;
+  }
+
+  .my_works_images {
+    width: 191px;
+    margin: 0 75px 31px 1px;
+  }
+
+  .my_works_images:nth-child(3n+3) {
+    margin-right: 75px;
+  }
+
+  .my_works_images:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .my_works_addImg {
+    height: 152px;
+  }
+
+  .back_works {
+    width: 191px;
+  }
+}
