@@ -22,42 +22,43 @@
         <div class="main clearfix">
             <!--HEADER-->
             <header class="header clearfix">
-                <div class="containerHead">
+                <div class="containerHead clearfix">
                     <a href="index.html" class="logo"><img src="img/logo1.png" alt="Kravchenko"></a>
                     <ul class="soc clearfix">
-                        <li class="socIcon">
-                            <a href="#" class="socIcon fac"></a>
+                        <li class="socIcon socIconDisplay">
+                            <a href="#" class="socIcon sprite sprite-facebook"></a>
                         </li>
-                        <li class="socIcon">
-                            <a href="#" class="socIcon vk"></a>
+                        <li class="socIcon socIconDisplay">
+                            <a href="#" class="socIcon sprite sprite-vk"></a>
                         </li>
-                        <li class="socIcon">
-                            <a href="#" class="socIcon tw"></a>
+                        <li class="socIcon socIconDisplay">
+                            <a href="#" class="socIcon sprite sprite-twiter"></a>
                         </li>
-                        <li class="socIcon">
-                            <a href="#" class="socIcon git"></a>
+                        <li class="socIcon socIconDisplay">
+                            <a href="#" class="socIcon sprite sprite-git"></a>
                         </li>
                         
                         <li class="socIcon mobile_menu_li">
                             <ul class="mobile_menu">
                        
                                 <li class="icon_mobile_menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span class="mobile_menu_decor"></span>
+                                    <span class="mobile_menu_decor"></span>
+                                    <span class="mobile_menu_decor"></span>
                                 </li>
 <!--MOBILE MENU DISPLAY NONE!!!-->
                                 <li class="items_mobile_menu displayNone">
                                    <ul class="items_mobile_menu_ul">
-                                    <a class='men_p click' href="index.html">
-                                        <li>Обо мне</li>
-                        </a>
-                                    <a class='men_p' href="pages/works.html">
-                                        <li>Мои Работы</li>
-                        </a>
-                                    <a class='men_p' href="pages/contacts.html">
-                                        <li>Обратная связь</li>
-                        </a>
+                                    <li>
+                                       <a class='men_p click' href="index.html">
+                                        Обо мне</a>
+                                        </li>
+                                    <li class='men_p' href="pages/works.html">
+                                        <a>Мои Работы</a>
+                        </li>
+                                    <li class='men_p' href="pages/contacts.html">
+                                        <a>Обратная связь</a>
+                        </li>
                                     </ul>
                                 </li>
                         
@@ -85,7 +86,7 @@
                 <!--Info-->
                 <div class=".info_work_edu">
                     <div class="block_style_header">
-                        <span>Основная информация</span>
+                        Основная информация
                     </div>
                     <div class="info_content block_style_content clearfix">
 
@@ -101,12 +102,19 @@
                             <li class="name_profile">Моя специализация:<span class="name_profile_value">FRONTEND разработчик</span></li>
                             <li class="name_profile">Ключевые навыки:
                                 <span class="skils clearfix">
-                                        <span class="skils_text"><span>HTML</span></span>
-                                        <span class="skils_text"><span>CSS</span></span>
-                                        <span class="skils_text"><span>JAVASCRIPT</span></span>
-                                        <span class="skils_text"><span>GIT</span></span>
-                                        <span class="skils_text"><span>GULP</span></span>
-                                        <span class="skils_text"><span>ANGULAR</span></span>
+                                        <span class="skils_text">
+                                            <span class="skils_text_technology">HTML</span></span>
+                                        <span class="skils_text">
+                                            <span class="skils_text_technology">CSS</span></span>
+                                        <span class="skils_text">
+                                            <span class="skils_text_technology">JAVASCRIPT</span></span>
+                                        <span class="skils_text">
+                                            <span class="skils_text_technology">GIT</span></span>
+                                        <span class="skils_text">
+                                            <span class="skils_text_technology">GULP</span></span>
+                                        <span class="skils_text">
+                                            <span class="skils_text_technology">ANGULAR</span>
+                                        </span>
                                     </span>
                             </li>
 
@@ -119,23 +127,35 @@
                 <!--Work-->
                 <div class="info_work_edu">
                     <div class="block_style_header">
-                        <span>Опыт работы</span>
+                        Опыт работы
                     </div>
                     <div class="work_content block_style_content">
                         <ul class="list_information">
                             <li class="list_information_block">
-                                <span class="icon_info_container"><span class="icon_container work"></span> </span>
+                                <span class="icon_info_container">
+                                   <span class="icon_container work_container">
+                                        <span class="sprite sprite-workIcon work"></span>
+                                    </span>
+                                </span>
                                 <span class="info_location">ГП "СМАП" - Юрист</span>
                                 <span class="info_date">Июль 2010 - Июль 2012</span>
                             </li>
                             
                             <li class="list_information_block">
-                                <span class="icon_info_container"><span class="icon_container work"></span> </span>   
+                                <span class="icon_info_container">
+                                   <span class="icon_container work_container">
+                                        <span class="sprite sprite-workIcon work"></span>
+                                    </span>
+                                </span>   
                                 <span class="info_location">Укртрансинспекция - Юрист</span>
                                 <span class="info_date">Июль 2012 - Сентябрь 2014</span></li>
                             
                             <li class="list_information_block">
-                               <span class="icon_info_container"><span class="icon_container work"></span> </span>
+                               <span class="icon_info_container">
+                                   <span class="icon_container work_container">
+                                        <span class="sprite sprite-workIcon work"></span>
+                                    </span>
+                                </span>
                                 <span class="info_location">ГП "Киевпассервис" - Начальник юридического отдела</span><span class="info_date">Сентябрь 2014 - Май 2015</span></li>
 
 
@@ -146,25 +166,40 @@
                 <!--Education-->
                 <div class="edu info_work_edu">
                     <div class="block_style_header">
-                        <span>Образование</span>
+                        Образование
                     </div>
                     <div class="edu_content block_style_content">
                         <ul class="list_information">
                             <li class="list_information_block">
                                <span class="icon_info_container">
-                               <span class="icon_container study"></span> </span>
+                                   <span class="icon_container study_container">
+                                        <span class="sprite sprite-studyIcon study"></span>
+                                    </span>
+                                </span>
                                 <span class="info_location">Полное высшее. КУТЭП</span><span class="info_date">Cентябрь 2006 - Июнь 2011</span></li>
                                 
                             <li class="list_information_block">
-                               <span class="icon_info_container"><span class="icon_container diplom"></span> </span>
+                               <span class="icon_info_container">
+                                   <span class="icon_container diplom_container">
+                                        <span class="sprite sprite-diplomaIcon diplom"></span>
+                                    </span>
+                                </span>
                                <span class="info_location">Курсы CyberBionic Systematics</span><span class="info_date">Май 2015 - Ноябрь 2015</span></li>
                                
                             <li class="list_information_block">
-                               <span class="icon_info_container"><span class="icon_container diplom"></span> </span>
+                               <span class="icon_info_container">
+                                   <span class="icon_container diplom_container">
+                                        <span class="sprite sprite-diplomaIcon diplom"></span>
+                                    </span>
+                                </span>
                                <span class="info_location">Курсы PHP Academy</span><span class="info_date">Декабрь 2015 - по настоящее время</span></li>
                                
                             <li class="list_information_block">
-                               <span class="icon_info_container"><span class="icon_container diplom"></span> </span>
+                               <span class="icon_info_container">
+                                   <span class="icon_container diplom_container">
+                                        <span class="sprite sprite-diplomaIcon diplom"></span>
+                                    </span>
+                                </span>
                                <span class="info_location">Курсы  Loftschool </span><span class="info_date">Январь 2016 - по настоящее время</span></li>
                         </ul>
                     </div>
@@ -174,26 +209,52 @@
             
             <!--Navigation-->
             <div class="left-navigation">
-                <div class="menu">
-                    <a class='men_p click' href="index.html">Обо мне</a>
-                    <a class='men_p' href="pages/works.html">Мои Работы</a>
-                    <a class='men_p' href="pages/contacts.html">Обратная связь</a>
-
-                </div>
-                <div class="contacts">
-                    <div class="cont_h "><span>Контакты</span></div>
-                    <a href="mailto:alex.krava@live.com" class="cont email">
-                        <span>alex.krava@live.com</span>
-                    </a>
-                    <a href="tel:+380634695049" class="cont phone">
-                        <span>+380634695049</span>
-                    </a>
-                    <a href="skype:a.kravchenko_1989" class="cont skype">
-                        <span>a.kravchenko_1989</span>
-                    </a>
-                </div>
+                <ul class="menu">
+                    <li class="menu_items_ln"><a class='men_p click' href="index.html">Обо мне</a></li>
+                    <li class="menu_items_ln"><a class='men_p' href="pages/works.html">Мои Работы</a></li>
+                    <li class="menu_items_ln"><a class='men_p' href="pages/contacts.html">Обратная связь</a></li>
+                </ul>
+                <ul class="contacts">
+                    <li class="cont_h">Контакты</li>
+                    <li class="cont_h_items">
+                       <a href="mailto:alex.krava@live.com" class="cont email">
+                            <span class="underline cont_decor">alex.krava@live.com</span>
+                        </a>
+                    </li>
+                    <li class="cont_h_items">
+                        <a href="tel:+380634695049" class="cont phone">
+                            <span class="underline cont_decor">+380634695049</span>
+                        </a>
+                    </li>
+                    <li class="cont_h_items">
+                        <a href="skype:a.kravchenko_1989" class="cont skype">
+                            <span class="underline cont_decor">a.kravchenko_1989</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <!--Navigation End-->
+            
+            
+<!-- Soc Icon Mobile-->
+            <ul class="soc socMobile clearfix">
+                        <li class="socIcon socIconMobile">
+                            <a href="#" class="socIcon sprite sprite-facebookMob"></a>
+                        </li>
+                        <li class="socIcon socIconMobile">
+                            <a href="#" class="socIcon sprite sprite-vkMob"></a>
+                        </li>
+                        <li class="socIcon socIconMobile">
+                            <a href="#" class="socIcon sprite sprite-twiterMob"></a>
+                        </li>
+                        <li class="socIcon socIconMobile">
+                            <a href="#" class="socIcon sprite sprite-gitMob"></a>
+                        </li>
+            </ul>
+            
+            
+            
+            
             <!--Content End-->
         </section>
         <!--CONTENT END-->
@@ -206,7 +267,7 @@
     </footer>
     <!--FOOTER END-->
 
-    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/jquery/jquery.min.js"></script>
 </body>
 
 </html>

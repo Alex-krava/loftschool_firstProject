@@ -1,0 +1,168 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-diplomaIcon {
+    width: 16px;
+    height: 21px;
+    background-position: 0 0;
+}
+
+.sprite-diplomaIconMob {
+    width: 21px;
+    height: 28px;
+    background-position: -16px 0;
+}
+
+.sprite-facebook {
+    width: 42px;
+    height: 44px;
+    background-position: -37px 0;
+}
+
+.sprite-facebookHov {
+    width: 42px;
+    height: 44px;
+    background-position: -79px 0;
+}
+
+.sprite-facebookMob {
+    width: 73px;
+    height: 75px;
+    background-position: -121px 0;
+}
+
+.sprite-facebookMobHov {
+    width: 73px;
+    height: 75px;
+    background-position: -194px 0;
+}
+
+.sprite-git {
+    width: 42px;
+    height: 44px;
+    background-position: -267px 0;
+}
+
+.sprite-gitHov {
+    width: 42px;
+    height: 44px;
+    background-position: -309px 0;
+}
+
+.sprite-gitMob {
+    width: 73px;
+    height: 75px;
+    background-position: -351px 0;
+}
+
+.sprite-gitMobHov {
+    width: 73px;
+    height: 75px;
+    background-position: -424px 0;
+}
+
+.sprite-locked {
+    width: 19px;
+    height: 22px;
+    background-position: -497px 0;
+}
+
+.sprite-picIcon {
+    width: 21px;
+    height: 21px;
+    background-position: -516px 0;
+}
+
+.sprite-schoolIcon {
+    width: 22px;
+    height: 22px;
+    background-position: -537px 0;
+}
+
+.sprite-schoolIconMob {
+    width: 27px;
+    height: 27px;
+    background-position: -559px 0;
+}
+
+.sprite-studyIcon {
+    width: 28px;
+    height: 19px;
+    background-position: -586px 0;
+}
+
+.sprite-studyIconMob {
+    width: 39px;
+    height: 26px;
+    background-position: -614px 0;
+}
+
+.sprite-twiter {
+    width: 42px;
+    height: 44px;
+    background-position: -653px 0;
+}
+
+.sprite-twiterHov {
+    width: 42px;
+    height: 44px;
+    background-position: -695px 0;
+}
+
+.sprite-twiterMob {
+    width: 73px;
+    height: 75px;
+    background-position: -737px 0;
+}
+
+.sprite-twiterMobHov {
+    width: 73px;
+    height: 75px;
+    background-position: -810px 0;
+}
+
+.sprite-unlocked {
+    width: 24px;
+    height: 22px;
+    background-position: -883px 0;
+}
+
+.sprite-vk {
+    width: 42px;
+    height: 44px;
+    background-position: -907px 0;
+}
+
+.sprite-vkHov {
+    width: 42px;
+    height: 44px;
+    background-position: -949px 0;
+}
+
+.sprite-vkMob {
+    width: 73px;
+    height: 75px;
+    background-position: -991px 0;
+}
+
+.sprite-vkMobHov {
+    width: 73px;
+    height: 75px;
+    background-position: -1064px 0;
+}
+
+.sprite-workIcon {
+    width: 22px;
+    height: 20px;
+    background-position: -1137px 0;
+    
+}
+
+.sprite-workIconMob {
+    width: 31px;
+    height: 29px;
+    background-position: -1159px 0;
+}

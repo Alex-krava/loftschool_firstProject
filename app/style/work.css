@@ -29,7 +29,7 @@
 }
 
     .my_works_images:hover .back_works {
-        display: none;
+        display: block;
     }
 
 .img_site_cont {
@@ -44,16 +44,27 @@
     
 }
     .back_works { 
-        display: block;
+        display: none;
         width: 166px;
-        height: 120px;
+        min-height: 120px;
         position: absolute;
-        background-color: rgba(111,109,109,0.4);
+        background-color: rgba(111,109,109,0.6);
         border-radius: 6px 6px 0 0;
+        padding: 35px 0 0 30px;
+        box-sizing: border-box;
     }
-
+.back_works_text{
+    width: 100px;
+    height: 30px;
+    color: #f6f5f4;
+    border: 2px solid #f6f5f4;
+    display: block;
+    text-align: center;
+    line-height: 2;
+    border-radius: 4px;
+}
 .my_works_name_site {
-    height: 33px;
+    min-height: 33px;
     color: #727070;
     font-family: 'OpenSans-Semibold';
     font-size: 13.35px;
@@ -65,7 +76,6 @@
 }
 
 .my_works_site_info {
-    height: 100%;
     background-color: #ffffff;
     font-family: 'OpenSans-Light';
     font-size: 12px;
@@ -93,11 +103,12 @@
 .my_works_addImg_icon{
     display: block;   
   border-radius: 50%;
-    background: url(../img/picIcon.png) center center no-repeat;
   box-shadow: 1px 1px 0px 0px #ffffff,inset 1px 1px 0px 0px #d0d0d0;
   width: 53px;
   height: 54px;
     margin: 25px auto 0;
+    padding: 17px 16px;
+    box-sizing: border-box;
     
 }
 .my_works_addImg_text{
@@ -139,5 +150,27 @@
 }
     .back_works {
     width: 191px;
+}
+}
+
+
+@media screen  and (max-width: 679px){
+    .my_works_container {
+    width: 400px;
+    margin: 0 auto;
+
+}
+    .img_site_cont{
+        height: 202px;
+    }
+    .my_works_images {
+    width: 276px;
+    margin: 0 55px 18px 55px;  
+        text-align: center;
+        background-color: #fff;
+}
+    .back_works {
+    width: 276px;
+    height: 202px;
 }
 }
