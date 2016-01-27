@@ -44,6 +44,9 @@ body {
     display: block;
     margin-top: 8px;
     float: left;
+    max-width: 165px;
+    max-height: 70px;
+    overflow: hidden;
 }
 
 
@@ -60,10 +63,6 @@ body {
     display: block;
     float: left;
     margin-left: 8px;
-    -moz-transition: 0.5s background-image;
-    -o-transition: 0.5s background-image;
-    -webkit-transition: 0.5s background-image;
-    transition: 0.5s background-image;
     list-style-type: none;
     padding: 0;
 }
@@ -124,7 +123,7 @@ body {
     font-size: 20px;
     text-align: left;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-    padding: 15px 0 0 25px;
+    padding: 15px 25px;
     background-color: #f2efef;
 }
 
@@ -134,7 +133,6 @@ body {
     font-size: 20px;
     font-family: OpenSans-Semibold;
     text-align: left;
-    padding: 15px 0 0 25px;
     background: linear-gradient(to bottom, #7de8cd, #3fb79a);
     box-shadow: 0 0 0 1px rgba(113, 111, 111, 0.15) inset, 0 6px 0 -4px #a5efdd inset;
     background-color: #53c7aa;
@@ -225,44 +223,6 @@ ul {
     padding: 0;
 }
 
-.men_p_dop {
-    width: 100%;
-    height: 56px;
-    background: linear-gradient(to bottom, #fbfafa, #e9e8e8);
-    display: block;
-    box-shadow: 0 0 0 1px rgba(191, 191, 191, 0.5) inset;
-    text-decoration: none;
-    font-family: OpenSans-Semibold;
-    color: #727070;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 20px;
-    text-align: left;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
-    padding: 15px 0 0 25px;
-    background-color: #f2efef;
-}
-
-    .men_p_dop:not(.click):hover {
-        background: linear-gradient(to bottom, #e4e3e3, #bfbcbc);
-    }
-
-    .men_p_dop:not(.click):active {
-        background: linear-gradient(to bottom, #a8a6a7, #7d797a);
-        box-shadow: 0 0 0 1px #9c9c9c inset, 0 6px 0 -4px #c3c3c3 inset;
-        color: #d8d8d8;
-        text-shadow: 0 1px 0 #666465;
-    }
-
-    .men_p_dop:first-child {
-        border-radius: 4px 4px 0 0;
-    }
-
-    .men_p_dop:last-child {
-        border-radius: 0 0 4px 4px;
-    }
 
 /*Contacts*/
 
@@ -283,7 +243,7 @@ ul {
     line-height: 1.1;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
     background-color: #f1c97b;
-    padding: 10px 0 10px 25px;
+    padding: 10px 25px;
     box-sizing: border-box;
 }
 
@@ -668,6 +628,9 @@ ul {
     }
 
     .logo {
+        max-width: 165px;
+        max-height: 70px;
+        overflow: hidden;
         margin: -5px 0 0 0;
     }
 
@@ -725,7 +688,7 @@ ul {
 
     .men_p {
         height: 40px;
-        padding: 10px 0 0 15px;
+        padding: 10px 15px;
         font-size: 16px;
     }
 

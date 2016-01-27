@@ -5,7 +5,7 @@
 .my_works_container {
     width: 568px;
     margin: 0 auto;
-    padding: 38px 0 15px 0;
+    padding: 38px 15px;
     overflow: hidden;
 }
 
@@ -50,7 +50,7 @@
         position: absolute;
         background-color: rgba(111,109,109,0.6);
         border-radius: 6px 6px 0 0;
-        padding: 35px 0 0 30px;
+        padding: 35px 30px;
         box-sizing: border-box;
     }
 .back_works_text{
