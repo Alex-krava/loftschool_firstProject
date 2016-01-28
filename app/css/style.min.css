@@ -484,6 +484,7 @@ body>.wrap {
   background: -webkit-gradient(linear,left top, left bottom,from(#e4e3e3),to(#bfbcbc));
   background: -webkit-linear-gradient(top,#e4e3e3,#bfbcbc);
   background: linear-gradient(to bottom,#e4e3e3,#bfbcbc);
+  background-color: #bfbcbc;
 }
 
 .men_p:not(.click):active {
@@ -879,7 +880,7 @@ ul {
   height: 54px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  left: 2%;
+  left: 0;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -892,7 +893,7 @@ ul {
 }
 
 .list_information_block:after {
-  left: 28px;
+  left: 17px;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -913,14 +914,14 @@ ul {
 .study:after {
   width: 28px;
   height: 19px;
-  left: 26px;
+  left: 15px;
   background-position: -586px 0;
 }
 
 .diplom:after {
   width: 16px;
   height: 21px;
-  left: 31px;
+  left: 21px;
   background-position: 0 0;
 }
 
