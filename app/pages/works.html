@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru-UA">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexandr Kravchenko and EULA" />
     <link rel="shortcut icon" href="../img/favicon.png" />
-    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>Кравченко Александр персональный сайт - портфолио web front-end developer</title>
     <link rel="stylesheet" href="../bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="../css/style.min.css">
@@ -22,7 +22,10 @@
             <!--HEADER-->
             <header class="header clearfix">
                 <div class="containerHead clearfix">
-                    <a href="index.html" class="logo"><img src="../img/logo1.png" alt="Kravchenko"></a>
+                    <a href="index.html" class="logo">
+                        <img src="../img/logo1.png" alt="Kravchenko">
+                        <h1 class="h1_content">Обратная связь</h1>
+                    </a>
                     <ul class="soc clearfix">
                         <li class="socIcon socIconDisplay">
                             <a href="https://www.facebook.com/alexandr.kravchenko.739" class="sprite sprite-facebook" target="_blank"></a>
@@ -36,39 +39,40 @@
                         <li class="socIcon socIconDisplay">
                             <a href="https://github.com/Alex-krava" class="sprite sprite-git" target="_blank"></a>
                         </li>
-                        
+
                         <li class="socIcon mobile_menu_li">
                             <ul class="mobile_menu">
-                       
+
                                 <li class="icon_mobile_menu">
                                     <span class="mobile_menu_decor"></span>
                                     <span class="mobile_menu_decor"></span>
                                     <span class="mobile_menu_decor"></span>
                                 </li>
-<!--MOBILE MENU DISPLAY NONE!!!-->
+                                <!--MOBILE MENU DISPLAY NONE!!!-->
                                 <li class="items_mobile_menu displayNone">
-                                   <ul class="items_mobile_menu_ul">
-                                    <li>
-                                       <a class='men_p' href="../index.html">
-                                        Обо мне</a>
+                                    <ul class="items_mobile_menu_ul">
+                                        <li>
+                                            <a class='men_p' href="../index.html">
+                                                Обо мне
+                                            </a>
                                         </li>
-                                    <li>
-                                        <a class='men_p click' href="works.html">Мои Работы</a>
-                        </li>
-                                    <li>
-                                        <a class='men_p' href="contacts.html">Обратная связь</a>
-                        </li>
+                                        <li>
+                                            <a class='men_p click' href="works.html">Мои Работы</a>
+                                        </li>
+                                        <li>
+                                            <a class='men_p' href="contacts.html">Обратная связь</a>
+                                        </li>
                                     </ul>
                                 </li>
-                        
+
                             </ul>
                         </li>
                     </ul>
-                    
-                    
-                    
+
+
+
                 </div>
-                </header>
+            </header>
         </div>
         
         <!--HEADER END-->
@@ -83,9 +87,10 @@
                     </div>
        </div>
        <div class="info_content block_style_content my_works_m clearfix">
-          <div class="my_works_container clearfix">
+          <ul class="my_works_container clearfix">
               
-               <a href="#" class="my_works_images">
+               <li class="my_works_images">
+                    <a href="#" class="decoration_my_works">
                        <div class="img_site_cont">
                            <div class="back_works">
                                <span class="back_works_text">Подробнее</span>
@@ -96,9 +101,11 @@
                        <div class="my_works_site_info">
                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, et.</span> 
                        </div>
-                 </a>
-                
-                 <a href="#" class="my_works_images">
+                     </a>
+                 </li>
+                 
+                <li class="my_works_images">
+                     <a href="#" class="decoration_my_works">
                        <div class="img_site_cont">
                            <div class="back_works">
                                <span class="back_works_text">Подробнее</span>
@@ -107,11 +114,13 @@
                        </div>
                        <div class="my_works_name_site">Lorem ipsum dolor sit.</div>
                        <div class="my_works_site_info">
-                       <span>Empty Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti obcaecati rem deserunt, fugiat id totam nam unde ipsam, delectus incidunt nihil voluptatem, ad molestiae libero tempore voluptates sequi perferendis rerum.</span> 
+                       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti obcaecati rem deserunt, fugiat id totam nam unde ipsam, delectus incidunt nihil voluptatem, ad molestiae libero tempore voluptates sequi perferendis rerum.</span> 
                        </div>
-                 </a>
+                     </a>
+                </li>
                  
-                 <a href="#" class="my_works_images">
+                 <li class="my_works_images">
+                     <a href="#" class="decoration_my_works">
                        <div class="img_site_cont">
                            <div class="back_works">
                                <span class="back_works_text">Подробнее</span>
@@ -122,15 +131,20 @@
                        <div class="my_works_site_info">
                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque vitae, vero tempore.</span> 
                        </div>
-                 </a>
-                 <a href="#" class="my_works_addImg my_works_images">
-                     <span class="my_works_addImg_icon">
-                         <i class="sprite sprite-picIcon"></i>
-                     </span>
-                     <span class="my_works_addImg_text">Добавить проект</span>
-                 </a>
-               
-           </div>
+                     </a>
+                </li> 
+                
+                <li class="my_works_addImg my_works_images">
+                    <a href="#" class="decoration_my_works decoration_my_works_height">
+                        <span class="my_works_addImg_icon">
+                            <i class="sprite sprite-picIcon"></i>
+                        </span>
+                        <span class="my_works_addImg_text">
+                            Добавить проект
+                        </span>
+                    </a>
+                </li>
+           </ul>
        
        
        </div>
@@ -144,7 +158,9 @@
                         <a class='men_p' href="../index.html">Обо мне</a>
                     </li>
                     <li class="menu_items_ln">
-                        <a class='men_p click' href="works.html">Мои Работы</a>
+                        <a class="menu_decor" href="works.html">
+                            <h2 class='men_p click'>Мои работы</h2>
+                        </a>
                     </li>
                     <li class="menu_items_ln">
                         <a class='men_p' href="contacts.html">Обратная связь</a>
@@ -153,18 +169,18 @@
                 <ul class="contacts">
                     <li class="cont_h">Контакты</li>
                     <li class="cont_h_items">
-                       <a href="mailto:alex.krava@live.com" class="cont email">
-                            <span class="underline cont_decor">alex.krava@live.com</span>
+                       <a href="mailto:alex.krava@live.com" class="cont cont_decor email">
+                            alex.krava@live.com
                         </a>
                     </li>
                     <li class="cont_h_items">
-                        <a href="tel:+380634695049" class="cont phone">
-                            <span class="underline cont_decor">+380634695049</span>
+                        <a href="tel:+380634695049" class="cont cont_decor phone">
+                            +380634695049
                         </a>
                     </li>
                     <li class="cont_h_items">
-                        <a href="skype:a.kravchenko_1989" class="cont skype">
-                            <span class="underline cont_decor">a.kravchenko_1989</span>
+                        <a href="skype:a.kravchenko_1989" class="cont cont_decor skype">
+                            a.kravchenko_1989
                         </a>
                     </li>
                 </ul>

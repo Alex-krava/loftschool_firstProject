@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru-UA">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alexandr Kravchenko and EULA" />
     <link rel="shortcut icon" href="../img/favicon.png" />
-    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>Кравченко Александр персональный сайт - портфолио web front-end developer</title>
-    <link rel="stylesheet" href="../fonts/fonts.css">
     <link rel="stylesheet" href="../bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="../css/style.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
@@ -23,7 +22,11 @@
             <!--HEADER-->
             <header class="header clearfix">
                 <div class="containerHead clearfix">
-                    <a href="../index.html" class="logo"><img src="../img/logo1.png" alt="Kravchenko"></a>
+                    <a href="../index.html" class="logo">
+                        <img src="../img/logo1.png" alt="Kravchenko">
+                        <h1 class="h1_content">Мои работы</h1>
+                    </a>
+
                     <ul class="soc clearfix">
                         <li class="socIcon socIconDisplay">
                             <a href="https://www.facebook.com/alexandr.kravchenko.739" class="sprite sprite-facebook" target="_blank"></a>
@@ -37,39 +40,40 @@
                         <li class="socIcon socIconDisplay">
                             <a href="https://github.com/Alex-krava" class="sprite sprite-git" target="_blank"></a>
                         </li>
-                        
+
                         <li class="socIcon mobile_menu_li">
                             <ul class="mobile_menu">
-                       
+
                                 <li class="icon_mobile_menu">
                                     <span class="mobile_menu_decor"></span>
                                     <span class="mobile_menu_decor"></span>
                                     <span class="mobile_menu_decor"></span>
                                 </li>
-<!--MOBILE MENU DISPLAY NONE!!!-->
+                                <!--MOBILE MENU DISPLAY NONE!!!-->
                                 <li class="items_mobile_menu displayNone">
-                                   <ul class="items_mobile_menu_ul">
-                                    <li>
-                                       <a class='men_p' href="../index.html">
-                                        Обо мне</a>
+                                    <ul class="items_mobile_menu_ul">
+                                        <li>
+                                            <a class='men_p' href="../index.html">
+                                                Обо мне
+                                            </a>
                                         </li>
-                                    <li class='men_p' href="works.html">
-                                        <a>Мои Работы</a>
-                        </li>
-                                    <li class='men_p click' href="contacts.html">
-                                        <a>Обратная связь</a>
-                        </li>
+                                        <li>
+                                            <a class='men_p' href="works.html">Мои Работы</a>
+                                        </li>
+                                        <li>
+                                            <a class='men_p click' href="contacts.html">Обратная связь</a>
+                                        </li>
                                     </ul>
                                 </li>
-                        
+
                             </ul>
                         </li>
                     </ul>
-                    
-                    
-                    
+
+
+
                 </div>
-                </header>
+            </header>
             <!--HEADER END-->
 
         <!--CONTENT-->
@@ -98,12 +102,12 @@
                         </div>
                         
                         <div class="contacts_massage">
-                            <span class="contacts_massage_text clearfix">Сообщение</span>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Кратко в чем суть" class="inputs_back textarea_width"></textarea>
+                            <span class="contacts_massage_text">Сообщение</span>
+                            <textarea cols="30" rows="10" placeholder="Кратко в чем суть" class="inputs_back textarea_width"></textarea>
                         </div>
                         
                         <div class="capcha">
-                            <span class="contacts_text_input">Введите код, указанный на картинке</span>
+                            <span class="contacts_text_input contacts_text_input_capcha">Введите код, указанный на картинке</span>
                             <div class="capcha_loc"></div>
                             <input type="text" placeholder="Введите код" class="inputs_back capcha_input_size">
                         </div>
@@ -131,24 +135,26 @@
                         <a class='men_p' href="works.html">Мои Работы</a>
                     </li>
                     <li class="menu_items_ln">
-                        <a class='men_p click' href="contacts.html">Обратная связь</a>
+                        <a class="menu_decor" href="contacts.html">
+                            <h2 class='men_p click'>Обратная связь</h2>
+                        </a>
                     </li>
                 </ul>
                 <ul class="contacts">
                     <li class="cont_h">Контакты</li>
                     <li class="cont_h_items">
-                       <a href="mailto:alex.krava@live.com" class="cont email">
-                            <span class="underline cont_decor">alex.krava@live.com</span>
+                       <a href="mailto:alex.krava@live.com" class="cont cont_decor email">
+                            alex.krava@live.com
                         </a>
                     </li>
                     <li class="cont_h_items">
-                        <a href="tel:+380634695049" class="cont phone">
-                            <span class="underline cont_decor">+380634695049</span>
+                        <a href="tel:+380634695049" class="cont cont_decor phone">
+                            +380634695049
                         </a>
                     </li>
                     <li class="cont_h_items">
-                        <a href="skype:a.kravchenko_1989" class="cont skype">
-                            <span class="underline cont_decor">a.kravchenko_1989</span>
+                        <a href="skype:a.kravchenko_1989" class="cont cont_decor skype">
+                            a.kravchenko_1989
                         </a>
                     </li>
                 </ul>
