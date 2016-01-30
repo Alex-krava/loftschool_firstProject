@@ -579,10 +579,6 @@ ul {
   padding: 0;
 }
 
-.contacts {
-  margin: 34px 0 35px;
-}
-
 .cont_h {
   width: 100%;
   min-height: 43px;
@@ -601,6 +597,7 @@ ul {
   padding: 10px 25px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 34px 0 -17px;
 }
 
 .block_style_header,
@@ -709,6 +706,10 @@ ul {
   line-height: .917;
   text-align: left;
   text-shadow: 0 1px 0 rgba(102,101,101,.5);
+}
+
+.block_style_header_normal {
+  margin: 0;
 }
 
 .block_style_content {

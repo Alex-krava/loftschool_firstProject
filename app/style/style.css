@@ -234,11 +234,6 @@ ul {
 
 
 /*Contacts*/
-
-.contacts {
-    margin: 34px 0 35px 0;
-}
-
 .cont_h {
     width: 100%;
     min-height: 43px;
@@ -256,6 +251,7 @@ ul {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 34px 0 -17px 0;
 }
 
 
@@ -353,7 +349,9 @@ ul {
     text-align: left;
     text-shadow: 0 1px 0 rgba(102, 101, 101, 0.5);
 }
-
+.block_style_header_normal{
+    margin:0;
+}
 .block_style_content {
     width: 100%;
     -moz-box-sizing: border-box;
