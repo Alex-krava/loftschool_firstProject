@@ -171,6 +171,11 @@
         text-shadow: 0 1px 0 #666465;
     }
 
+.invalid{
+        border:2px solid #f19f84;
+        box-shadow: #f19f84 0 0 4px 0;
+    }
+
 /*Media Contacts Mobile*/
 @media screen and (max-width: 679px) {
     .contacts_text {
@@ -238,3 +243,5 @@
         margin: 20px 30px 21px 62px;
     }
 }
+
+    
