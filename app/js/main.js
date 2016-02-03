@@ -46,39 +46,59 @@ var validModule = (function () {
             name = $(".name_input"),
             email = $(".email_input"),
             message = $(".message_input"),
+            capcha = $(".capcha_input_size"),
             submit = $(".submit"),
             reset = $(".reset"),
-            inputs = $(".inputs_back");
+            inputs = $(".inputs_back"),
+            tool = $(".errors"),
+            toolName = $(".error_name"),
+            toolQues = $(".error_ques"),
+            toolMail = $(".error_mail"),
+            toolCap = $(".error_capcha"),
             form = $(".contacts_container");
+
      
         form.on('submit', function (e) {
-            if (e.target.submit) {
-                validationForm(name, patternName);
-                validationForm(email, patternEmail);
-                validationForm(message, patternMessage);
 
-                function validationForm(input, pattern) {
+            validationForm(name, patternName, toolName);
+            validationForm(email, patternEmail, toolMail);
+            validationForm(message, patternMessage, toolQues);
+            //validationForm(capcha, null ,toolCap); //No pattern
+
+                function validationForm(input, pattern, toolt) {
                     if (input.val() != "") {
                         if (input.val().search(pattern) == 0) {
                             input.removeClass('invalid');
+                            toolt.removeClass('opacity');
                         } else {
                             e.preventDefault();
                             input.addClass('invalid');
+                            toolt.addClass('opacity');
                         }
                     } else {
                         e.preventDefault();
                         input.addClass('invalid');
+                        toolt.addClass('opacity');
                     }
                 }
 
-            }
         });
 
-        inputs.focus(function () {
-            inputs.removeClass('invalid');
-        });
+        function focus(inp, toolt) {
+            inp.focus(function () {
+                inp.removeClass('invalid');
+                toolt.removeClass('opacity');
+            });
+        }
+
+        focus(name, toolName);
+        focus(email, toolMail);
+        focus(message, toolQues);
+        focus(capcha, toolCap);
+
         reset.on('click', function () {
             inputs.removeClass('invalid');
+            tool.removeClass('opacity');
         })
     }
 

@@ -171,10 +171,10 @@
         text-shadow: 0 1px 0 #666465;
     }
 
-.invalid{
-        border:2px solid #f19f84;
-        box-shadow: #f19f84 0 0 4px 0;
-    }
+.invalid {
+    border: 2px solid #f19f84;
+    box-shadow: #f19f84 0 0 4px 0;
+}
 
 /*Media Contacts Mobile*/
 @media screen and (max-width: 679px) {
@@ -243,5 +243,85 @@
         margin: 20px 30px 21px 62px;
     }
 }
+/*error contacts*/
+.errors {
+    position: absolute;
+    background-image: -moz-linear-gradient( 90deg, rgb(211,118,84) 0, rgb(243,162,135) 90%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(211,118,84) 0, rgb(243,162,135) 90%);
+    background-image: -ms-linear-gradient( 90deg, rgb(211,118,84) 0, rgb(243,162,135) 90%);
+    box-shadow: 0 2px 1px 0 rgba(9, 9, 9, 0.17),inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    font-size: 12px;
+    font-family: "OpenSans-Semibold";
+    color: rgb(154, 78, 50);
+    line-height: 1.2;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+    border-radius: 5px;
+    padding: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #f19a7c;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: .3s all;
+    -o-transition:.3s all;
+    -webkit-transition:.3s all;
+    transition:.3s all;
+}
 
-    
+.error_contacts_left {
+    border-right: none;
+}
+
+    .error_contacts_left:before {
+        content: '';
+        position: absolute;
+        background: url(../img/error2.png) center center no-repeat;
+        width: 10px;
+        height: 25px;
+        top: -1px;
+        left: 84px;
+    }
+
+.error_contacts_left_first {
+    top: 246px;
+    margin-left: -100px;
+}
+
+.error_contacts_left_second {
+    top: 390px;
+    margin-left: -94px;
+}
+
+    .error_contacts_left_second:before {
+        left: 78px;
+    }
+
+.error_contacts_right {
+    border-left: none;
+}
+
+    .error_contacts_right:before {
+        content: '';
+        position: absolute;
+        background: url(../img/error.png) center center no-repeat;
+        width: 10px;
+        height: 25px;
+        top: -1px;
+        left: -9px;
+    }
+
+.error_contacts_right_first {
+    top: 245px;
+    margin-left: 418px;
+}
+
+.error_contacts_right_second {
+    top: 563px;
+    margin-left: 418px;
+}
+
+.opacity {
+    visibility: visible;
+    opacity: 1;
+}
