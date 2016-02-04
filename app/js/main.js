@@ -109,3 +109,20 @@ var validModule = (function () {
 })();
 
 validModule.init();
+
+(function () {
+    $('.popup_addImage').on('change', function () {
+        var str = document.getElementsByClassName('popup_addImage')[0].value;
+        if (str.lastIndexOf('\\')) {
+            var i = str.lastIndexOf('\\') + 1;
+        }
+        else {
+            var i = str.lastIndexOf('/') + 1;
+        }
+        var filename = str.slice(i);
+        var uploaded = document.getElementsByClassName("popup_addImage_label")[0];
+
+        uploaded.classList.add("popup_text_class");
+        uploaded.innerHTML = filename;
+    });
+})()

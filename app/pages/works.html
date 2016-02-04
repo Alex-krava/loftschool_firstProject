@@ -208,7 +208,7 @@
     <!--FOOTER END-->
 
     <!-- Popup -->
-    <div class="popup_container"><!-- DisplayNone -->
+    <div class="popup_container displayNone"><!-- DisplayNone -->
         <form class="popup">
             <div class="popup_close"></div>
 
@@ -221,8 +221,9 @@
                 <span class="popup_text">Картинка проекта</span>
 
                 <div class="popup_addImage_container">
+                    <div class="popup_addImage_label">Загрузите изображение</div>
                     <div class="popup_addImage_button"></div>
-                    <input type="file" placeholder="Введите название" class="popup_addImage" />
+                    <input type="file" class="popup_addImage" />
                 </div>
 
             </div>
@@ -237,6 +238,12 @@
                 </div>
 
                 <input type="submit" value="Добавить" class="submit_popup" />
+
+            <!-- error popups -->
+            <div class="errors_popup error_popup_contacts_left error_popup_contacts_left_first error_name">введите название</div>
+            <div class="errors_popup error_popup_contacts_left error_popup_contacts_left_second error_ques">изображение</div>
+            <div class="errors_popup error_popup_contacts_left error_popup_contacts_left_third error_ques">ссылка на проект</div>
+            <div class="errors_popup error_popup_contacts_left error_popup_contacts_left_fourth error_ques">описание проекта</div>
 
         </form>
     </div>
