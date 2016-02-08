@@ -43,27 +43,18 @@ var validModule = (function () {
         var patternName = "[a-zA-Zа-яА-Я]+",
             patternEmail = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i,
             patternMessage = "[a-zA-Zа-яА-Я]+",
-            name = $(".name_input"),
-            email = $(".email_input"),
-            message = $(".message_input"),
-            capcha = $(".capcha_input_size"),
-            submit = $(".submit"),
-            reset = $(".reset"),
-            inputs = $(".inputs_back"),
-            tool = $(".errors"),
-            toolName = $(".error_name"),
-            toolQues = $(".error_ques"),
-            toolMail = $(".error_mail"),
-            toolCap = $(".error_capcha"),
-            form = $(".contacts_container");
+            toolFirst = $(".error_first"),
+            toolSecond = $(".error_second"),
+            toolThird = $(".error_third"),
+            toolfourth = $(".error_fourth"),
+            form = $(".contacts_container"),
+            popup = $(".popup_container");
 
-     
         form.on('submit', function (e) {
-
-            validationForm(name, patternName, toolName);
-            validationForm(email, patternEmail, toolMail);
-            validationForm(message, patternMessage, toolQues);
-            //validationForm(capcha, null ,toolCap); //No pattern
+            validationForm($(".name_input"), patternName, toolFirst);
+            validationForm($(".email_input"), patternEmail, toolThird);
+            validationForm($(".message_input"), patternMessage, toolSecond);
+            validationForm($(".capcha_input_size"), undefined, toolfourth);//capcha no pattern
 
                 function validationForm(input, pattern, toolt) {
                     if (input.val() != "") {
@@ -84,21 +75,63 @@ var validModule = (function () {
 
         });
 
+        popup.on('submit', function (e) {
+
+            validationForm($('.pop_input_first'), toolFirst);
+            validFile($('.pop_input_second'), toolSecond);
+            validationForm($('.pop_input_third'), toolThird);
+            validationForm($('.pop_input_fourth'), toolfourth);
+
+            function validationForm(input, toolt) {
+                if (input.val() != "") {
+                    input.removeClass('popup_invalid');
+                    toolt.removeClass('popup_opacity');
+                } else {
+                    e.preventDefault();
+                    input.addClass('popup_invalid');
+                    toolt.addClass('popup_opacity');
+                }
+            }
+            function validFile(input, toolt) {
+                if (input.html() != "Загрузите изображение") {
+                    input.removeClass('popup_invalid');
+                    toolt.removeClass('popup_opacity');
+                } else {
+                    e.preventDefault();
+                    input.addClass('popup_invalid');
+                    toolt.addClass('popup_opacity');
+                }
+            }
+
+        });
+
+        $('.popup_addImage').on('click', function () {
+            $('.pop_input_second').removeClass('popup_invalid');
+            toolSecond.removeClass('popup_opacity');
+        });
+
         function focus(inp, toolt) {
             inp.focus(function () {
                 inp.removeClass('invalid');
                 toolt.removeClass('opacity');
+                inp.removeClass('popup_invalid');
+                toolt.removeClass('popup_opacity');
             });
         }
 
-        focus(name, toolName);
-        focus(email, toolMail);
-        focus(message, toolQues);
-        focus(capcha, toolCap);
+        focus($(".name_input"), toolFirst);
+        focus($(".email_input"), toolThird);
+        focus($(".message_input"), toolSecond);
+        focus($(".capcha_input_size"), toolfourth);
 
-        reset.on('click', function () {
-            inputs.removeClass('invalid');
-            tool.removeClass('opacity');
+        focus($(".pop_input_first"), toolFirst);
+        focus($(".pop_input_second"), toolSecond);
+        focus($(".pop_input_third"), toolThird);
+        focus($(".pop_input_fourth"), toolfourth);
+
+        $(".reset").on('click', function () {
+            $(".inputs_back").removeClass('invalid');
+            $(".errors").removeClass('opacity');
         })
     }
 

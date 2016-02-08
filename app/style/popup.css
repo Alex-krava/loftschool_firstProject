@@ -169,12 +169,12 @@
 
 .popup_addImage_label {
     float: left;
-    height: 35px;
+    height: 38px;
     overflow: hidden;
     padding: 8px 9px;
     text-align: left;
     vertical-align: middle;
-    width: 250px;
+    width: 271px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -182,6 +182,8 @@
     font-family: 'OpenSans-Light';
     color: #c7c6c6;
     line-height: 1.2;  
+    border-radius:4px 0 0 4px;
+    margin:-2px 0 0 -2px;
 }
 .popup_text_class{
     font-family: "OpenSans";
@@ -283,3 +285,12 @@
     .error_popup_contacts_left_fourth:before{
         left: 117px;
     }
+
+.popup_invalid{
+    border: 2px solid #f19f84;
+    box-shadow: #f19f84 0 0 4px 0;
+}
+.popup_opacity{
+    visibility: visible;
+    opacity: 1;
+}
