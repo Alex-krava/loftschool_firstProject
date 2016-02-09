@@ -1,7 +1,10 @@
-﻿//placeholder ie8
+﻿//modernizr
 (function () {
     if (!Modernizr.input.placeholder) {
+        //placeholder ie8
         $('.inputs_back').placeholder();
+        //portfolio nth-child ie8
+        $('.my_works_images:nth-child(3n+3)').css("margin-right", "0");
     }
 })();
 //popup
@@ -164,3 +167,4 @@ validModule.init();
 $(".icon_mobile_menu").on("click", function () {
     $(".items_mobile_menu").toggleClass("displayNone");
 })
+
