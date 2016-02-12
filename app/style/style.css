@@ -685,14 +685,20 @@ ul {
     .cont {
         float: left;
         width: 213px;
+            -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,.3);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,.3);
     }
 
         .cont:last-child {
-            border-radius: 0;
+            border-radius: 0 !important;
+            border-bottom:none;
         }
 
     .cont_decor {
         padding: 8px 0 0 75px;
+
     }
 
     .contacts {
@@ -714,9 +720,10 @@ ul {
     }
 
     .men_p {
-        height: 40px;
-        padding: 10px 15px;
+        min-height: 45px;
+        padding: 11px 15px;
         font-size: 16px;
+        
     }
 
     .mobile_menu_li {
@@ -823,6 +830,7 @@ ul {
     }
 
     .info_date {
+        text-align:left;
         margin-bottom: 15px;
     }
 
@@ -841,7 +849,6 @@ ul {
     }
 
     .cont_decor {
-        max-width: 250px;
         padding: 5px 0 0 135px;
     }
 

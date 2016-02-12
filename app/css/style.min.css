@@ -131,7 +131,7 @@
   border: none;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  margin: 20px 98px 273px 25px;
+  margin: 20px 98px 35px 25px;
 }
 
 .submit:hover {
@@ -1430,11 +1430,16 @@ ul {
   .cont {
     float: left;
     width: 213px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,.3);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,.3);
   }
 
   .cont:last-child {
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    -webkit-border-radius: 0!important;
+    border-radius: 0!important;
+    border-bottom: none;
   }
 
   .cont_decor {
@@ -1460,8 +1465,8 @@ ul {
   }
 
   .men_p {
-    height: 40px;
-    padding: 10px 15px;
+    min-height: 45px;
+    padding: 11px 15px;
     font-size: 16px;
   }
 
@@ -1564,6 +1569,7 @@ ul {
   }
 
   .info_date {
+    text-align: left;
     margin-bottom: 15px;
   }
 
@@ -1582,7 +1588,6 @@ ul {
   }
 
   .cont_decor {
-    max-width: 250px;
     padding: 5px 0 0 135px;
   }
 
@@ -2009,6 +2014,10 @@ ul {
   background: linear-gradient(to bottom,#e8e7e7,#bfbdbd);
 }
 
+.img_site {
+  width: 100%;
+}
+
 @media screen and (max-width:999px) {
   .my_works_container {
     width: 465px;
@@ -2034,8 +2043,29 @@ ul {
     height: 152px;
   }
 
+  .my_works_addImg_icon {
+    margin-left: 68px;
+  }
+
+  .my_works_addImg_text {
+    margin-left: 33px;
+  }
+
   .back_works {
     width: 191px;
+  }
+
+  .error_contacts_right_second {
+    top: 539px;
+  }
+
+  .error_contacts_left_second {
+    top: 368px;
+  }
+
+  .error_contacts_left_first,
+  .error_contacts_right_first {
+    top: 221px;
   }
 }
 
@@ -2043,6 +2073,13 @@ ul {
   .back_works,
   .img_site_cont {
     height: 202px;
+  }
+
+  .men_p {
+    min-height: 66px;
+    width: 300px;
+    font-size: 24px;
+    padding: 19px 25px;
   }
 
   .my_works_container {
@@ -2057,7 +2094,30 @@ ul {
     background-color: #fff;
   }
 
+  .items_mobile_menu {
+    right: 0;
+    width: auto;
+  }
+
+  .items_mobile_menu::after {
+    left: 215px;
+  }
+
   .back_works {
     width: 276px;
+  }
+
+  .diplom,
+  .study {
+    width: auto;
+    height: auto;
+  }
+
+  .decoration_my_works_height {
+    margin: 0 0 0 41px;
+  }
+
+  .back_works_text {
+    margin: 35px 0 0 50px;
   }
 }

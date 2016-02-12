@@ -143,6 +143,9 @@
 .my_works_addImg:hover {
     background: linear-gradient(to bottom, #e8e7e7, #bfbdbd);
 }
+.img_site{
+    width:100%;
+}
 
 /*Media Tablet Works*/
 @media screen and (max-width: 999px) {
@@ -169,14 +172,38 @@
     .my_works_addImg {
         height: 152px;
     }
-
+    .my_works_addImg_icon{
+        margin-left:68px;
+    }
+    .my_works_addImg_text{
+        margin-left:33px;
+    }
     .back_works {
         width: 191px;
+    }
+    .error_contacts_right_second {
+        top: 539px;
+    }
+    .error_contacts_left_second {
+        top: 368px;
+    }
+    .error_contacts_left_first {
+        top: 221px;
+    }
+    .error_contacts_right_first {
+        top: 221px;
     }
 }
 
 
 @media screen and (max-width: 679px) {
+    .men_p {
+        min-height: 66px;
+        width: 300px;
+        font-size: 24px;
+        padding: 19px 25px;
+
+}
     .my_works_container {
         width: 400px;
         margin: 0 auto;
@@ -192,9 +219,25 @@
         text-align: center;
         background-color: #fff;
     }
-
+    .items_mobile_menu{
+        right:0;
+        width:auto;
+    }
+        .items_mobile_menu::after {
+            left: 215px;
+        }
     .back_works {
         width: 276px;
         height: 202px;
+    }
+    .diplom, .study {
+     width: auto;
+    height: auto; 
+}
+    .decoration_my_works_height {
+        margin: 0 0 0 41px;
+    }
+    .back_works_text{
+        margin:35px 0 0 50px;
     }
 }

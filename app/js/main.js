@@ -25,6 +25,9 @@ var popupModule = (function () {
             }
         });
         close.on('click', function () {
+            $(".inputs_back").removeClass('popup_invalid');
+            $(".errors_popup").removeClass('popup_opacity');
+            $(".pop_input_second").removeClass('popup_invalid');
             container.addClass('displayNone');
         });
     }
