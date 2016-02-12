@@ -117,7 +117,7 @@ var validModule = (function () {
         });
 
         function focus(inp, toolt) {
-            inp.focus(function () {
+            inp.keydown(function () {
                 inp.removeClass('invalid');
                 toolt.removeClass('opacity');
                 inp.removeClass('popup_invalid');
