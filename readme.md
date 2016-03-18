@@ -1,6 +1,6 @@
 First project LoftSchool
 
-<a href='http://loftschool.kravchenkoalex.ru/'> DEMO </a>
+<a href='http://loftschool.kravchenkoalex.ru/' target='_blank'> DEMO </a>
 
 Installation
 
