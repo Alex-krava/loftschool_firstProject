@@ -1,5 +1,7 @@
 First project LoftSchool
 
+<a href='http://loftschool.kravchenkoalex.ru/'> DEMO </a>
+
 Installation
 
 1. $ git clone https://github.com/Alex-krava/loftschool_firstProject.git
